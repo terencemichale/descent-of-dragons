@@ -186,3 +186,18 @@ console.log(obj.a === obj['b']) // same value and diff type
 
 console.log(obj.c)
 console.log(obj.c())
+
+class Rectangle{
+  constructor(width,height){
+    this.width = width;
+    this.height = height;
+  }
+
+  area() {
+    return this.width * this.height
+  }
+}
+
+var r1 = new Rectangle(10,20)
+console.log(r1.area)
+console.log(r1.area())
