@@ -150,6 +150,39 @@ for(var i = 0; i < arr.length; i++){
   console.log(arr[i])
 }
 
-for(var item of arr){
+for(var item of arr){ // of
   console.log(item)
 }
+
+for(var item in arr){ // in
+  console.log(item)
+}
+
+arr.forEach(val => {console.log(val)}) // looping through each value in an array and do something to it
+arr.reverse()
+
+// => arrow function
+arr.forEach(val => {console.log(val)})
+
+arr = [1,4,2,3,56,7,5]
+
+arr.forEach(val => {console.log(val)})
+
+arr.filter(val => {console.log(val > 5)})
+
+arr = ['book','ease','eye']
+
+arr.filter(val => {console.log(val.indexOf('o') >= 0)})
+
+arr.map(val => {console.log(val+' rat')})
+
+var obj = {}
+obj = {a:1, b:'1', c:function(){"console.log('inside c')"}}
+console.log(obj.a)
+console.log(obj['a'])
+console.log(obj.a === obj['a']) // same value and type
+console.log(obj.a == obj['b']) // same value and diff type
+console.log(obj.a === obj['b']) // same value and diff type
+
+console.log(obj.c)
+console.log(obj.c())
